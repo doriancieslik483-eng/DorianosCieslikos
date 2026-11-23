@@ -1,101 +1,242 @@
-!DOCTYPE html>
-<html lang="pl-PL">
-<html>
-     <head>
-             <meta charset="utf-8">
-             <title> Dorian 2f  </title>
-     </head>
-<body bgcolor="silver">
-    <body>
- <p align="right"> <font color="green" size="7" face="Arial"> Dorian </font> </p> <br>
- <p align="right"> <font color="green" size="6" face="Arial"> Dorian </font> </p> <br>
- <p align="right"> <font color="green" size="5" face="Arial"> Dorian </font> </p> <br>
- <p align="right"> <font color="green" size="4" face="Arial"> Dorian </font> </p> <br>
- <p align="right"> <font color="green" size="3" face="Arial"> Dorian </font> </p> <br>
- <p align="right"> <font color="green" size="2" face="Arial"> Dorian </font> </p> <br>
- <p align="right"> <font color="green" size="1" face="Arial"> Dorian </font> </p> <br>
+<!DOCTYPE HTML><html lang="pl-PL"><head>    <meta charset="utf-8">    <title>Cieślik</title>    <style>        body {            margin: 0;            padding: 20px 40px;            font-family: "Times New Roman", serif;            background: white;            color: #000;
+        }                /* Styl nawigacji */        .katalog-nawigacja {            margin-bottom: 20px;            font-family: Arial, sans-serif;            font-size: 14px;            background: #f9f9f9;            padding: 10px 15px;            border: 1px solid #ddd;            border-radius: 4px;        }        .katalog-nawigacja ul {            list-style-type: disc;            padding-left: 20px;            margin: 5px 0 0 0;        }        .katalog-nawigacja li {            margin-bottom: 3px;        }        .katalog-nawigacja a {            color: blue;            text-decoration: underline;            cursor: pointer;        }
 
-<h6>  Cieslik </h6><br>
-<h5>  Cieslik </h5><br>
-<h4>  Cieslik </h4><br>
-<h3>  Cieslik </h3><br>
-<h2>  Cieslik </h2><br>
-<h1>  Cieslik </h1><br>
+        .sekcja-gora {            margin-bottom: 30px;            line-height: 1.6;        }
 
+        /* Pierwsza ramka – szare tło, standardowy tekst */
+        .sekcja-szara {
+            width: 800px;
+            max-width: 100%;
+            margin: 20px auto;
+            padding: 25px;
+            background: #c0c0c0;
+            border: 1px solid #000;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+        }
 
-<p align="right"> <font color="grey" size="1" face="Arial"> :| - Brak emocji </font> </p> <br>
+        /* Druga ramka – szare tło, jaskrawo-niebieski tekst */
+        .sekcja-jaskrawa {
+            width: 800px;
+            max-width: 100%;
+            margin: 20px auto;
+            padding: 25px;
+            background: #c0c0c0;
+            border: 1px solid #000;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: #00ffff;
+        }
 
-<p align="right"> <font color="purple " size="2" face="Arial"> :P pokazanie języka  </font> </p> <br>
+        .sekcja-jaskrawa h3 {
+            color: #00ffff;
+        }
 
-<p align="right"> <font color="silver" size="4" face="Arial"> ;) - puszczanie oczka </font> </p> <br>
+        .ramka {            position: relative;            width: 100%;            height: 265px;            margin-bottom: 25px;            background: #c0c0c0;            border: 1px solid black;            box-sizing: border-box;            padding: 45px 10px 20px 10px;        }
+        .tytul {            position: absolute;            top: 48px;            left: 10px;            font-size: 25px;            font-weight: bold;        }
+        .srodek {            left: 50%;            transform: translateX(-50%);        }
+        .prawa {            left: auto;            right: 10px;        }
+        .tresc {            position: absolute;            top: 128px;            left: 10px;            right: 10px;            border: 1px solid #999;            padding: 10px;            font-size: 14px;            line-height: 1.4;            box-sizing: border-box;            background: white;        }
+        
+        .pasek1 {            position: absolute;            bottom: 15px;            right: 30px;            width: 40%;            height: 8px;            background: green;            border-radius: 4px;        }
+        .pasek2 {            position: absolute;            top: 20px;            left: 30px;            width: 50%;            height: 8px;            background: red;            border-radius: 4px;        }
+        .pasek3 {            position: absolute;            bottom: 25px;            left: 25%;            width: 50%;            height: 8px;            background: blue;            border-radius: 4px;        }
 
-<p align="right"> <font color="purple" size="5" face="Courier New"> :O - Zdziwienie </font> </p> <br>
+        .dane {            position: absolute;            left: 10px;            bottom: 22px;            font-size: 14px;        }
+        .dane div {            display: inline-block;            margin-right: 35px;        }
+    </style>
+</head><body>
 
-<p align="right"> <font color="maroon" size="6" face="Times New Roman"> :P - ignorowanie </font> </p> <br>
+    <!-- ================= GÓRA ================= -->
+    <div id="gora"></div>
+    <div class="katalog-nawigacja">        
+        góra strony:<br>
+        <ul>            
+            <li><a href="mail.html">Link do poczty</a></li>            
+            <li><a href="INST_HTM_technik_2026.pdf">Link do ściągania pliku</a></li>            
+            <li><a href="#srodek">Link do środka tekstu</a></li>            
+            <li><a href="#dol">Link do końca tekstu</a></li>            
+            <li><a href="tabela_cieslik.html">Link do strony zawierającej tabelę</a></li>            
+            <li><a href="formulaz.html">Link do strony zawierającej formularz</a></li>        
+        </ul>    </div>
 
-<p align="right"> <font color="blue" size="7" face=Verdana> :) - Zadowolenie </font> </p> <br>
+    <hr>
 
+    <div class="sekcja-gora">
+        <p align="right"> <font color="red" size="7" face="Arial"> Dorian </font> </p>      
+        <p align="right"> <font color="red" size="6" face="Arial"> Dorian </font> </p>      
+        <p align="right"> <font color="red" size="5" face="Arial"> Dorian </font> </p>      
+        <p align="right"> <font color="red" size="4" face="Arial"> Dorian </font> </p>      
+        <p align="right"> <font color="red" size="3" face="Arial"> Dorian </font> </p>      
+        <p align="right"> <font color="red" size="2" face="Arial"> Dorian </font> </p>      
+        <p align="right"> <font color="red" size="1" face="Arial"> Dorian </font> </p> 
 
-<p align="left"> <font color="black" size="3" face="Arial"><b> 80-283</b><i>,Gdańsk</i><u>,warnenka</u><strike>101/34 </strike> </font> </p> <br>
+        <h6> Cieślik </h6>
+        <h5> Cieślik </h5>
+        <h4> Cieślik </h4>
+        <h3> Cieślik </h3>
+        <h2> Cieślik </h2>
+        <h1> Cieślik </h1>
 
-<p align="right"> <font color="Yellow" size="20" face="Arial"> Ulubiony Aktor: Iron man </font> </p> <br>
-<p align="middle"> <font color="Grey" size="10" face="Arial"> Ulubiony Zespół Muzyczny: <font color="Red" size="20" face="Arial"> Serafin  </font> </p> <br>
-<p align="middle"> <font color="blue" size="5" face="Arial"> Data urodzenia: 30 Marzec 1972.</font> </p> <br>
+        <p align="right"> <font color="maroon" size="1" face="Arial"> :( smutek </font> </p>    
+        <p align="right"> <font color="Yellow" size="2" face="Arial"> ;) uśmiech z przymrużeniem oka </font> </p>    
+        <p align="right"> <font color="Green" size="4" face="Arial"> :,( Płacz </font> </p>    
+        <p align="right"> <font color="Black" size="5" face="Courier New"> :C smutek </font> </p>        
+    </div>
 
-<p align="left"> <font color="black" size="5" face="Arial" ><b> H<sub>2</sub>SO<sub>4</sub> </font> </p>
-<p align="left"> <font color="black" size="5" face="Arial"> x<sup>*</sup>x<c>=x<sup>2</font> </p>
+    <!-- ================= ŚRODEK ================= -->
+    <div id="srodek"></div>
+    <div class="katalog-nawigacja">        
+        środek strony<br>
+        <ul>            
+            <li><a href="mail.html">Link do poczty</a></li>            
+            <li><a href="INST_HTM_technik_2026.pdf">Link do ściągania pliku</a></li>            
+            <li><a href="#gora">Link początek tekstu</a></li>            
+            <li><a href="#dol">Link do końca tekstu</a></li>            
+            <li><a href="tabela_cieslik.html">Link do strony zawierającej tabelę</a></li>            
+            <li><a href="formulaz.html">Link do strony zawierającej formularz</a></li>        
+        </ul>    </div>
 
-<H3 ALIGN=left><font color="green"> Nagłówek 1  po lewej</H3>
+    <p align="right"> <font color="green" size="6" face="Times New Roman"> ;( lub :'( płacz </font> </p>    
+    <p align="right"> <font color="lime" size="7" face="Verdana"> :P pokazanie języka </font> </p>
 
-<fieldset>
-<legend><font color="green"> Żart o informatyku </legend>
-Jak informatycy zwracają się do żon?  <br />
-Myszko.
-</fieldset>
-<br />
+    <div class="ramka">
+        <div class="tytul"> Żart o informatyku </div>
+        <div class="tresc">             
+            <b>Pewien informatyk poszedł na ryby.</b><br><br>
+            Złapał złotą rybkę, która obiecała spełnić tradycyjnie trzy życzenia. Informatyk mówi: - Żeby był pokój na świecie.<br>
+            - Za trudne.<br>
+            - No to, aby windows się nie zacinał.<br>
+            - To już niech będzie ten pokój na świecie.         
+        </div>
+        <div class="pasek1"></div>
+    </div>
 
-<HR SIZE=3 WIDTH=60% ALIGN=left COLOR=green>
+    <div class="ramka">
+        <div class="tytul srodek"> Żart o informatyku </div>
+        <div class="tresc">             
+            <b>Co robi informatyk budząc się na kacu?.</b><br><br>
+            Testuje pamięć <br>
+        </div>
+        <div class="pasek2"></div>
+    </div>
 
-<H3 ALIGN=middle><font color="cyan"> Nagłówek 2 po środku </H3>
+    <div class="ramka">
+        <div class="tytul prawa"> Żart żony informatyka: </div>
+        <div class="tresc">
+            <img src="ZDJECIA ITP/gif1.gif" align="right" border="0" alt="Grafika">             
+            <b>- Jaki rozmiar piersi powinna mieć żona informatyka?.</b><br><br>
+            <b>- C++ </b><br> 
+        </div>
+        <div class="pasek3"></div>
+        <div class="dane">             
+            <div> <b>nazwisko ucznia</b><br><br> Cieślik </div>
+            <div> <b>imię ucznia</b><br><br> Dorian </div> 
+        </div>
+    </div>
 
-<fieldset>
-<legend><font color="cyan"> Żart o kostce lodu </legend>
-Zosiu, co tak długo robisz w kuchni?  <br />
- Wpadła mi kostka lodu do wrzątku i nie mogę jej znaleźć.                    
-</fieldset>
-<br />
+    <!-- PIERWSZA RAMKA: SZARA, ZWYKŁY TEKST -->
+    <div class="sekcja-szara">
+        <h3>Poniżej są trzy wyliczenia z różnymi znakami wyliczenia</h3>
+        <h3>Ty zaproponuj swoje, związane z informatyką</h3>
+        <ul>
+            <li><b>Pogrubienie:</b> &lt;b&gt; &lt;/b&gt;</li>
+            <li><b>Kursywa:</b> &lt;i&gt; &lt;/i&gt;</li>
+            <li><b>Podkreślenie:</b> &lt;u&gt; &lt;/u&gt;</li>
+        </ul>
 
-<HR SIZE=3 WIDTH=60% ALIGN=middle COLOR=cyan>
+        <br>
+        <h3>Poniżej są trzy numerowania z różnymi znakami numerowania</h3>
+        <h3>Ty zaproponuj swoje, związane z informatyką</h3>
+        <ol type="I">
+            <li>Nagłówki w treści strony WWW (&lt;h1&gt; do &lt;h6&gt;).</li>
+            <li>Możliwości funkcji font (&lt;font size&gt;, &lt;font color&gt;).</li>
+            <li>Najprostsze rodzaje kolorów (Nazwa, RGB, Hex).</li>
+        </ol>
+    </div>
 
-<H3 ALIGN=right><font color="yellow"> Nagłówek 3 po prawej </H3>
+    <!-- DRUGA RAMKA: SZARA, JASKRAWO-NIEBIESKI TEKST -->
+    <div class="sekcja-jaskrawa">
+        <h3>Poniżej będą trzy poziomy numerowania/wyliczenia z różnymi rodzajami numerowania/wyliczenia</h3>
+        <h3>Ty zaproponuj swoje, związane z informatyką</h3>
+        <ol start="2">
+            <li>Popularne interfejsy urządzeń peryferyjnych do komputera:
+                <ol type="A" start="2">
+                    <li>Interfejsy na przesył obrazu:
+                        <ol type="I" start="2">
+                            <li>HDMI
+                                <ul>
+                                    <li>Type A- Standard</li>
+                                    <li>Type B- Dual-Link</li>
+                                    <li>Type C- Mini</li>
+                                    <li>Type D- Micro</li>
+                                    <li>Type E- Zawiera blokującą ochronę aby kabel Typu Standard się nie ruszał</li>
+                                </ul>
+                            </li>
+                            <li>DVI
+                                <ul>
+                                    <li>DVI-I- Przesyła dane cyfrowe i analogowe</li>
+                                    <li>DVI-D- Przesyła dane cyfrowe</li>
+                                    <li>DVI-A- Przesyła dane analogowe</li>
+                                </ul>
+                            </li>
+                            <li>D-SUB
+                                <ul>
+                                    <li>DE-9- Standard</li>
+                                    <li>DE-9M- Standard bez śrub mocujących</li>
+                                    <li>DA-15- Złącze GamePort</li>
+                                    <li>DE-15F- Złącze VGA, SVGA i XGA</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                    <li style="list-style-type: none;">
+                        <ol type="A" start="3">
+                            <li>Interfejsy na przesył audio:
+                                <ol type="I" start="2">
+                                    <li>Jack
+                                        <ul>
+                                            <li>Jack 6,3mm</li>
+                                            <li>Jack 3,5mm (minijack)</li>
+                                            <li>Jack 2,5mm (microjack)</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>Interfejsy na przesył danych:
+                                <ol type="I" start="2">
+                                    <li>USB
+                                        <ul>
+                                            <li>Type A (USB 1.0 & 2.0)</li>
+                                            <li>Type B (USB 1.0 & 2.0)</li>
+                                            <li>Mini A (USB 2.0)</li>
+                                            <li>Mini B (USB 2.0)</li>
+                                            <li>Mini AB (USB 2.0)</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+    </div>
 
-<fieldset>
-<legend><font color="yellow">Pacjent w szpitalu</legend>
-Wiecie dlaczego zamknęli szpital w Wąchocku?
-- Bo nikt się w nim leczyć nie chciał.
-A czemu?
-- Bo dostali nowoczesne skalpele sterowane z Windowsem 95.   <br />                  
-</fieldset>
-<br />
+    <!-- ================= DÓŁ ================= -->
+    <div id="dol"></div>    
+    <div class="katalog-nawigacja">        
+        dół strony<br>
+        <ul>            
+            <li><a href="mail.html">Link do poczty</a></li>            
+            <li><a href="INST_HTM_technik_2026.pdf">Link do ściągania pliku</a></li>            
+            <li><a href="#gora">Link początek tekstu</a></li>            
+            <li><a href="#srodek">Link do środka tekstu</a></li>            
+            <li><a href="tabela_cieslik.html">Link do strony zawierającej tabelę</a></li>            
+            <li><a href="formulaz.html">Link do strony zawierającej formularz</a></li>        
+        </ul>    </div>
 
-<HR SIZE=3 WIDTH=60% ALIGN=RIGHT COLOR=yellow>
-
-
-<H2 ALIGN=left><font color="gray"> Poniżej są trzy wyliczenia z różnymi znakami wyliczenia </H2>
-
- 
- <p align="left"> <font color="blue" size="2" face="Arial"> Możliwości znaków specjalnych w html </font> </p> <br>
-
-<UL TYPE=circle><font color="blue">
-<LI>  € -   "&euro;"
-<LI>  © -   "&copy;"
-<LI>  
-</UL>
-</body>
-  </html>
-
-
-
-
-</body>
-  </html>
+</body></html>
